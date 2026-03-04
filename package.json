@@ -1,0 +1,35 @@
+{
+  "name": "pixel-agents-sentinel",
+  "version": "0.0.1",
+  "description": "Recreation of pixel-agents",
+  "main": "out/extension.js",
+  "scripts": {
+    "vscode:prepublish": "npm run esbuild-prod",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "esbuild": "node ./esbuild.js",
+    "esbuild-prod": "node ./esbuild.js --prod",
+    "esbuild-watch": "node ./esbuild.js --watch",
+    "test-compile": "tsc -p ./",
+    "test-watch": "tsc -watch -p ./",
+    "prettier-format": "prettier --config .prettierrc "src/**/*.ts" --write"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.86.0",
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
+    "@vscode/test-electron": "^2.3.9",
+    "eslint": "^8.56.0",
+    "glob": "^10.3.10",
+    "mocha": "^10.2.0",
+    "typescript": "^5.3.3",
+    "esbuild": "^0.20.0",
+    "prettier": "^3.2.5"
+  }
+}
