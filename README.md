@@ -4,8 +4,8 @@ This is a recreation of the [pablodelucca/pixel-agents](https://github.com/pablo
 
 ## Progress
 
-- [ ] Initial repository setup
-- [ ] Project structure recreated
+- [x] Initial repository setup
+- [x] Project structure recreated (top-level directories and files)
 - [ ] Core files copied/adapted
 - [ ] Dependencies installed
 - [ ] Project runnable
